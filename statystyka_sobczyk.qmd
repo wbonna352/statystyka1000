@@ -1,0 +1,26 @@
+# Statystyka - Mieczysław Sobczyk
+
+## Opisowa analiza struktury zjawisk masowych
+
+1.  W dwóch komórkach organizacyjnych przedsiębiorstwa pracują po dwie osoby. W pierwszej komórce miesięczne zarobki brutto wynoszą odpowiednio 1400 zł i 1600 zł, a w komórce drugiej - 2000 zł i 4000 zł. Związki zawodowe domagają się zwiększenia średniego zarobku w obydwu komórkach. Jak to zrobić, nie zwalniając pracowników i nie wydając na podwyżki ani grosza?
+
+```
+Przesunąć pracownika zarabiającego 2000 zł z komórki II do I.
+```
+
+2.  W mieszance jest 20 kg składnika *A* w cenie 15 zł za kilogram, 25 kg składnika *B* w cenie 20 zł za kilogram oraz 5 kg składnika *C* w cenie 30 zł za kilogram. Oblicz cenę jednego kilograma mieszanki.
+
+```{r}
+wagi <- c(20, 25, 5)
+ceny <- c(15, 20, 30)
+
+x <- sum(wagi*ceny) / sum(wagi)
+
+cat(x, "zł")
+```
+
+3.  Jaka jest średnia arytmetyczna dwóch liczb, jeżeli:
+
+    a\) pierwsza liczba jest o 5 większa od drugiej;
+
+    b\) suma 10% pierwszej liczby i połowy drugiej liczby jest równa 4?

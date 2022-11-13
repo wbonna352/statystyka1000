@@ -10,6 +10,7 @@ book:
   date-format: "DD-MM-YYYY"
   chapters:
     - index.qmd
+    - statystyka_sobczyk.qmd
     - references.qmd
 
 bibliography: references.bib
