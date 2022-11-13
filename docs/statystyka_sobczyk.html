@@ -203,17 +203,21 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ol type="1">
 <li>W dwóch komórkach organizacyjnych przedsiębiorstwa pracują po dwie osoby. W pierwszej komórce miesięczne zarobki brutto wynoszą odpowiednio 1400 zł i 1600 zł, a w komórce drugiej - 2000 zł i 4000 zł. Związki zawodowe domagają się zwiększenia średniego zarobku w obydwu komórkach. Jak to zrobić, nie zwalniając pracowników i nie wydając na podwyżki ani grosza?</li>
 </ol>
+<!-- -->
 <pre><code>Przesunąć pracownika zarabiającego 2000 zł z komórki II do I.</code></pre>
 <ol start="2" type="1">
 <li>W mieszance jest 20 kg składnika <em>A</em> w cenie 15 zł za kilogram, 25 kg składnika <em>B</em> w cenie 20 zł za kilogram oraz 5 kg składnika <em>C</em> w cenie 30 zł za kilogram. Oblicz cenę jednego kilograma mieszanki.</li>
 </ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>wagi <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">20</span>, <span class="dv">25</span>, <span class="dv">5</span>)</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>ceny <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">15</span>, <span class="dv">20</span>, <span class="dv">30</span>)</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">sum</span>(wagi<span class="sc">*</span>ceny) <span class="sc">/</span> <span class="fu">sum</span>(wagi)</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(x, <span class="st">"zł"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a>wagi <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">20</span>, <span class="dv">25</span>, <span class="dv">5</span>)</span>
+<span id="cb2-2"><a href="#cb2-2"></a>ceny <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">15</span>, <span class="dv">20</span>, <span class="dv">30</span>)</span>
+<span id="cb2-3"><a href="#cb2-3"></a></span>
+<span id="cb2-4"><a href="#cb2-4"></a>x <span class="ot">&lt;-</span> <span class="fu">sum</span>(wagi<span class="sc">*</span>ceny) <span class="sc">/</span> <span class="fu">sum</span>(wagi)</span>
+<span id="cb2-5"><a href="#cb2-5"></a></span>
+<span id="cb2-6"><a href="#cb2-6"></a><span class="fu">cat</span>(x, <span class="st">"zł"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>19 zł</code></pre>
 </div>
