@@ -253,10 +253,17 @@ if (m0 > m1) {
 12. Z miast *A* i *B* odległych o 35 km wyjeżdżają dwaj rowerzyści. Prędkość jazdy jednego z nich jest równa 75% prędkości drugiego. Oblicz prędkość każdego z nich, wiedząc, że spotkają się po 1,25h jazdy.
 
 \begin{equation}
+  \left\{
   \begin{array}{l}
     V_{A} = \frac{3}{4} V_{B} \\
     V_{A} = \frac{S_{A}}{\frac{5}{4}} \\
-    V_{B} = \frac{35 - S_{A}}{\frac{5}{4}} \\
+    V_{B} = \frac{35 - S_{A}}{\frac{5}{4}} 
+  \end{array}
+  \right.
+\end{equation}
+
+\begin{equation}
+  \begin{array}{l}
     \frac{S_{A}}{\frac{5}{4}} = \frac{3}{4} \frac{35 - S_{A}}{\frac{5}{4}} \\
     S_{A} = \frac{3}{4} (35 - S_{A}) \\
     \frac{7}{4} S_{A} = \frac{105}{4} \\
