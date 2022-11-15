@@ -256,16 +256,19 @@ if (m0 > m1) {
   \left\{
   \begin{array}{l}
     V_{A} = \frac{3}{4} V_{B} \\
-    V_{A} = \frac{S_{A}}{\frac{5}{4}} \\
-    V_{B} = \frac{35 - S_{A}}{\frac{5}{4}} 
+    V_{A} = \frac{S_{A}}{t_{A}} \\
+    V_{B} = \frac{S_{B}}{t_{B}} \\
+    t_{A} = t_{B} = \frac{5}{4} \\
+    S_{A} + S_{B} = 35
   \end{array}
   \right.
 \end{equation}
 
 \begin{equation}
   \begin{array}{l}
-    \frac{S_{A}}{\frac{5}{4}} = \frac{3}{4} \frac{35 - S_{A}}{\frac{5}{4}} \\
-    S_{A} = \frac{3}{4} (35 - S_{A}) \\
+    \frac{S_{A}}{t_{A}} = \frac{3}{4} \cdot \frac{S_{B}}{t_{B}} \\
+    \frac{S_{A}}{t_{A}} = \frac{3}{4} \cdot \frac{35 - S_{A}}{t_{A}} | \cdot t_{A} \\
+    S_{A} = \frac{3}{4} \cdot (35 - S_{A}) \\
     \frac{7}{4} S_{A} = \frac{105}{4} \\
     S_{A} = 15 \\
     V_{A} = \frac{15}{\frac{5}{4}} = 12 \\
