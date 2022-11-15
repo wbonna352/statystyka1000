@@ -2,4 +2,3 @@
 
 Rozwiązania zadań z książek o statystyce.
 
-\setlength{\jot}{10pt}
