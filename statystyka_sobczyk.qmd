@@ -48,11 +48,174 @@ cat(x, "zł")
 \end{equation}
 ```
 4.  Średnia arytmetyczna trzech kolejnych liczb naturalnych wynosi 8. Znajdź te liczby.
+
+\begin{equation}
+  \left\{
+  \begin{array}{l}
+    x_{2} = x_{1} + 1 \\
+    x_{3} = x_{1} + 2 \\
+    \frac{x_{1} + x_{2} + x_{3}}{3} = 8
+  \end{array}
+  \right.
+\end{equation}
+
+\begin{equation}
+  \begin{array}{l}
+    \frac{x_{1} + (x_{1} + 1) + (x_{1} + 2)}{3} = 8 \\
+    3x_{1} + 3 = 24 \\
+    3x_{1} = 21 \\
+    x_{1} = 7 
+  \end{array}
+\end{equation}
+
+\begin{equation}
+  \left\{
+  \begin{array}{l}
+    x_{1} = 7 \\
+    x_{2} = 8 \\
+    x_{3} = 9
+  \end{array}
+  \right.
+\end{equation}
+
 5.  Ojciec Huberta jest teraz 3 razy starszy od syna. Za 10 lat ojciec będzie dwa razy starszy od syna. Jaki jest obecnie przeciętny wiek tych osób?
+
+\begin{equation}
+  \left\{
+  \begin{array}{l}
+    o = 3h \\
+    o + 10 = 2 \cdot (h + 10)
+  \end{array}
+  \right.
+\end{equation}
+
+\begin{equation}
+  \begin{array}{l}
+    3h + 10 = 2 \cdot (h + 10) \\
+    3h + 10 = 2h + 20 \\
+    h = 10 \\
+    o = 3h = 3 \cdot 10 = 30 \\
+    \bar{x} = \frac{o + h}{2} = \frac{30 + 10}{2} = 20
+  \end{array}
+\end{equation}
+
 6.  W pewnym zakładzie zbadano pracowników bezpośrednio produkcyjnych pod względem stażu pracy. Okazało się, że 25% tych pracowników pracowało krócej niż 6 lat, połowa od 6 do 12 lat, natomiast najdłuższy staż pracy pozostałych pracowników był równy 18 lat. Średni czas pracy pracowników administracyjno-biurowych w tym zakładzie wynosił 12 lat. Jaki jest średni staż pracy ogółu pracowników tego zakładu, jeśli grupa pracowników bezpośrednio produkcyjnych jest 2,5-krotnie liczniejsza od administracyjno-biurowych?
+
+```{r}
+# średnia przedziału
+w <- c(3, 9, 15, 12)
+# liczba pracowników (jako procent pracowników produkcyjnych)
+q <- c(25, 50, 25, 100/2.5)
+
+x <- sum(w*q) / sum(q)
+
+cat(x, "lat.")
+```
+
+
 7.  Obwód trójkąta jest równy 21 cm. Pierwszy bok jest równy średniej arytmetycznej pozostałych boków. Drugi bok stanowi 75% boku trzeciego. Oblicz długości boków trójkąta.
+
+\begin{equation}
+  \left\{
+  \begin{array}{l}
+    a + b + c = 21 \\
+    a = \frac{b + c}{2} \\
+    b = \frac{3}{4} c
+  \end{array}
+  \right.
+\end{equation}
+
+\begin{equation}
+  \left\{
+  \begin{array}{l}
+    a + b + c = 21 \\
+    2a = b + c \\
+    a = \frac{\frac{3}{4} c + c}{2} 
+  \end{array}
+  \right.
+\end{equation}
+
+\begin{equation}
+  \left\{
+  \begin{array}{l}
+    a + 2a = 21 \\
+    a = \frac{7}{8} c 
+  \end{array}
+  \right.
+\end{equation}
+
+\begin{equation}
+  \begin{array}{l}
+    a = 7 \\
+    7 = \frac{7}{8} c \\
+    c = 8 \\
+    b = 6
+  \end{array}
+\end{equation}
+
+\begin{equation}
+  \left\{
+  \begin{array}{l}
+    a  = 7 \\
+    b = 6 \\
+    c = 8 
+  \end{array}
+  \right.
+\end{equation}
+
 8.  Średni miesięczny zarobek 25 pracowników w pewnej spółce akcyjnej wynosił 2000 zł, gdyż 20 osób zarabiało 1400 zł, 4 osoby po 3000 zł, a 1 osoba 10000 zł. Dwudziestu najniżej zarabiających pracowników zażądało podniesienia ich płac do poziomu średniej płacy w spółce. Żądanie zostało spełnione. Czy po podwyżce zarabiają oni powyżej średniej?
+
+```{r}
+# pracownicy
+p <- c(20, 4, 1)
+# zarobki przed zmianą
+c0 <- c(1400, 3000, 10000)
+
+#średnia przed zmianą
+m0 <- sum(p*c0) / sum(p)
+
+#zarobki po zmianie
+c1 <- c(m0, 3000, 10000)
+
+#średnia po zmianie
+m1 <- sum(p*c1) / sum(p)
+
+if (m0 > m1) {
+  cat("Tak, zarabiają powyżej średniej.")
+} else {
+  cat("Nie, nie zarabiają powyżej średniej.")
+}
+```
+
 9.  Stosunek dwóch liczb całkowitych wynosi 3:5. Jeżeli pierwszą liczbę zmniejszymy o 2, to otrzymamy 40% drugiej liczby. Jaka jest średnia arytmetyczna tych liczb?
+
+\begin{equation}
+  \left\{
+  \begin{array}{l}
+    5x_{1} = 3x_{2} \\
+    x_{1} - 2 = \frac{2}{5} x_{2} | \cdot 5
+  \end{array}
+  \right.
+\end{equation}
+
+\begin{equation}
+  \left\{
+  \begin{array}{l}
+    5x_{1} = 3x_{2} \\
+    5x_{1} - 10 = 2 x_{2}
+  \end{array}
+  \right.
+\end{equation}
+
+\begin{equation}
+  \begin{array}{l}
+    x_{2} = 10 \\
+    x_{1} - 2 = \frac{2}{5} \cdot 10 \\
+    x_{1} = 6 \\
+    \bar{x} = \frac{x_{1} + x_{2}}{2} = \frac{6 + 10}{2} = 8
+  \end{array}
+\end{equation}
+
 10. W pewnej grupie uczniów średnia wieku wynosi 11 lat. Najstarszy z nich ma 17 lat, a średnia wieku pozostałych wynosi 10 lat. Ile uczniów liczy ta grupa?
 11. Iloczyn dwóch kolejnych liczb parzystych jest o 296 mniejszy od iloczynu następnych dwóch liczb parzystych. Oblicz średnią arytmetyczną tych czterech liczb.
 12. Z miast *A* i *B* odległych o 35 km wyjeżdżają dwaj rowerzyści. Prędkość jazdy jednego z nich jest równa 75% prędkości drugiego. Oblicz prędkość każdego z nich, wiedząc, że spotkają się po 1,25h jazdy.
