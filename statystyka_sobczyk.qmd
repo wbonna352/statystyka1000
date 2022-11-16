@@ -304,15 +304,68 @@ if (m0 > m1) {
   \right.
 \end{equation}
 ```
+
 13. Zbierano pieniądze na wycieczkę szkolną. Jeśli każdy z uczestników wycieczki wpłaci 20 zł, to zabraknie 104 zł, a jeśli każdy wpłaci po 25 zł, to zostanie 96 zł. Jaki jest średni koszt tej wycieczki?
 
+\begin{equation}
+  \left\{
+  \begin{array}{l}
+    X = 20n + 104 \\
+    X = 25n - 96 \\
+    \bar{x} = \frac{X}{n}
+  \end{array}
+  \right.
+\end{equation}
+    
+\begin{equation}
+  \begin{array}{l}
+    20n + 104 = 25n - 96 \\
+    5n = 200 \\
+    n = 40 \\
+    X = 20 \cdot 40 + 104 = 904 \\
+    \bar{x} = \frac{904}{40} = 22.6
+  \end{array}
+\end{equation}
+
 14. Trzy miejscowości *A*, *B*, *C* leżą przy jednej drodze w podanej kolejności, przy czym od *B* do *C* jest o 12 km dalej niż od *A* do *B*. Samochód jadący z prędkością 70 km/h przebył drogę od *A* do *C* w czasie o 54 minuty krótszym niż motocykl jadący z prędkością 40 km/h. Jaka jest odległość od *A* do *B*, a jaka od *A* do *C*?
+
+\begin{equation}
+  \left\{
+  \begin{array}{l}
+    S_{AB} + S_{BC} = S_{AC} \\
+    S_{AB} = S_{BC} - 12 \\
+    \frac{S_{AC}}{70} + \frac{9}{10} = \frac{S_{AC}}{40}
+  \end{array}
+  \right.
+\end{equation}
+
+\begin{equation}
+  \begin{array}{l}
+    \frac{S_{AC}}{70} + \frac{9}{10} = \frac{S_{AC}}{40} | \cdot 280 \\
+    4S_{AC} + 252 = 7S_{AC} \\
+    3S_{AC} = 252 \\
+    S_{AC} = 84 \\
+    S_{AB} + S_{BC} = 84 \\
+    S_{BC} - 12 + S_{BC} = 84 \\
+    S_{BC} = 48 \\
+    S_{AB} = 48 - 12 = 36
+  \end{array}
+\end{equation}
+
+\begin{equation}
+  \left\{
+  \begin{array}{l}
+    S_{AB} = 36 \\
+    S_{AC} = 84
+  \end{array}
+  \right.
+\end{equation}
 
 15. Firma zagraniczna zakupiła w Polsce węgiel i przewiozła go statkami. Jeden statek zabrał 5/12 ładunku, drugi 5750 ton, czyli o 500 ton mniej niż pierwszy, a trzeci zabrał resztę. Jaka jest średnia arytmetyczna ładunku zabrana przez statek?
 
 16. Koszt 60 egzemplarzy I tomu i 75 egzemplarzy II tomu broszury wynosi 405 zł. Przy 15% rabatu za I tom i 10% rabatu za II tom zapłacono 355,50 zł. Jaka była średnia cena tomu?
 
-17. Jeśli zwiększy się prędkość pociągu o 10 km/h, to zyskuje się 40 minut na trasie. Jeśli natomiast zmniejszy się prędkość o 10 km/h, to straci się godzinę. Jaka jest długość trasy?
+17. Jeśli zwiększy się prędkość pociągu o 10 km/h, to zyskuje się 40 minut na trasie. Jeśli natomiast zmniejszy się prędkość o 10 km/h, to straci się godzinę. Jaka jest długość trasy?
 
 18. Kolumna demonstrantów porusza się z prędkością 3 km/h. Motocyklista, jadący z prędkością 15 km/h w tym samym kierunku co kolumna, potrzebował dwie minuty, aby wyprzedzić kolumnę. Jaką długość miała kolumna?
 
@@ -337,7 +390,7 @@ if (m0 > m1) {
 
     Za pomocą miar przeciętnych scharakteryzuj ten rozkład. Wyniki zinterpretuj.
 
-26. W spółdzielni mieszkaniowej ,,Kolejarz'' dominują mieszkania o powierzchni 45 - 50 m\^2. W tym przedziale jest 50% mieszkań. Na podstawie badań statystycznych ustalono, że najwięcej mieszkań miało powierzchnię 48 m^2^, a 20% mieszkań -- od 40 do 45 m^2^. Jaki odsetek mieszkań w tej spółdzielni ma powierzchnię od 50 do 55 m^2^?
+26. W spółdzielni mieszkaniowej ,,Kolejarz'' dominują mieszkania o powierzchni 45 - 50 m^2^. W tym przedziale jest 50% mieszkań. Na podstawie badań statystycznych ustalono, że najwięcej mieszkań miało powierzchnię 48 m^2^, a 20% mieszkań -- od 40 do 45 m^2^. Jaki odsetek mieszkań w tej spółdzielni ma powierzchnię od 50 do 55 m^2^?
 
 27. W wyniku pomiaru wzrostu studentów uzyskano dość asymetryczny rozkład wzrostu, dla którego dominanta była o 3% niższa od średniej arytmetycznej równej 170 cm. Jaka była wartość środkowa wzrostu w tej grupie studentów?
 
