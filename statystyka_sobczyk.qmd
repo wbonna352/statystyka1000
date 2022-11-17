@@ -363,7 +363,35 @@ if (m0 > m1) {
 
 15. Firma zagraniczna zakupiła w Polsce węgiel i przewiozła go statkami. Jeden statek zabrał 5/12 ładunku, drugi 5750 ton, czyli o 500 ton mniej niż pierwszy, a trzeci zabrał resztę. Jaka jest średnia arytmetyczna ładunku zabrana przez statek?
 
+\begin{equation}
+  \left\{
+  \begin{array}{l}
+    X = x_{1} + x_{2} + x_{3} \\
+    x_{1} = \frac{5}{12} X \\
+    x_{2} = 5750 \\
+    x_{2} = x_{1} - 500 \\
+    \bar{x} = \frac{X}{3}
+  \end{array}
+  \right.
+\end{equation}
+
+\begin{equation}
+  \begin{array}{l}
+    x_{1} - 500 = 5750 \\
+    x_{1} = 6250 \\
+    6250 = \frac{5}{12} X \\
+    X = 15000 \\
+    \bar{x} = \frac{15000}{3} = 5000
+  \end{array}
+\end{equation}
+
 16. Koszt 60 egzemplarzy I tomu i 75 egzemplarzy II tomu broszury wynosi 405 zł. Przy 15% rabatu za I tom i 10% rabatu za II tom zapłacono 355,50 zł. Jaka była średnia cena tomu?
+
+\begin{equation}
+  \begin{array}{l}
+    \bar{x} = \frac{450}{60+75} = 3
+  \end{array}
+\end{equation}
 
 17. Jeśli zwiększy się prędkość pociągu o 10 km/h, to zyskuje się 40 minut na trasie. Jeśli natomiast zmniejszy się prędkość o 10 km/h, to straci się godzinę. Jaka jest długość trasy?
 
