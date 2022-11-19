@@ -395,6 +395,55 @@ if (m0 > m1) {
 
 17. Jeśli zwiększy się prędkość pociągu o 10 km/h, to zyskuje się 40 minut na trasie. Jeśli natomiast zmniejszy się prędkość o 10 km/h, to straci się godzinę. Jaka jest długość trasy?
 
+\begin{equation}
+  \left\{
+  \begin{array}{l}
+  V = \frac{S}{t} \implies S = Vt\\
+  V + 10 = \frac{S}{t-\frac{2}{3}} \implies S = (V + 10) (t - \frac{2}{3}) \\
+  V - 10 = \frac{S}{t+1} \implies S = (V - 10) (t + 1)
+  \end{array}
+  \right.
+\end{equation}
+
+\begin{equation}
+  \left\{
+  \begin{array}{l}
+    Vt = (V + 10) (t - \frac{2}{3}) \\
+    Vt = (V - 10) (t + 1)
+  \end{array}
+  \right.
+\end{equation}
+
+\begin{equation}
+  \left\{
+  \begin{array}{l}
+    Vt = Vt - \frac{2}{3} V + 10t - \frac{20}{3} \\
+    Vt = Vt + V - 10t - 10
+  \end{array}
+  \right.
+\end{equation}
+
+\begin{equation}
+  \left\{
+  \begin{array}{l}
+    \frac{2}{3} V = 10t - \frac{20}{3} \\
+    V = 10t + 10
+  \end{array}
+  \right.
+\end{equation}
+
+\begin{equation}
+  \begin{array}{l}
+    V - \frac{2}{3}V = 10t + 10 - 10t + \frac{20}{3} \\
+    \frac{1}{3} V = 10 + \frac{20}{3} | \cdot 3 \\
+    V = 30 + 20 = 50 \\
+    50 = 10t + 10 \implies t = 4 \\
+    S = Vt = 50 \cdot 4 = 200
+  \end{array}
+\end{equation}
+
+
+
 18. Kolumna demonstrantów porusza się z prędkością 3 km/h. Motocyklista, jadący z prędkością 15 km/h w tym samym kierunku co kolumna, potrzebował dwie minuty, aby wyprzedzić kolumnę. Jaką długość miała kolumna?
 
 19. Samochód jechał z miejscowości A do B z prędkością 80 km/h, w drodze powrotnej zaś z prędkością 60 km/h. Jaka była średnia prędkość samochodu na trasie z A do B i z B do A?
