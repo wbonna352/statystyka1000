@@ -446,15 +446,126 @@ if (m0 > m1) {
 
 18. Kolumna demonstrantów porusza się z prędkością 3 km/h. Motocyklista, jadący z prędkością 15 km/h w tym samym kierunku co kolumna, potrzebował dwie minuty, aby wyprzedzić kolumnę. Jaką długość miała kolumna?
 
+\begin{equation}
+  \begin{array}{l}
+    V = 15 - 3 = 12 \\
+    t = \frac{2}{60} \\
+    S = Vt = 12 \cdot \frac{2}{60} = 0.4 [km]
+  \end{array}
+\end{equation}
+
 19. Samochód jechał z miejscowości A do B z prędkością 80 km/h, w drodze powrotnej zaś z prędkością 60 km/h. Jaka była średnia prędkość samochodu na trasie z A do B i z B do A?
+
+```{r}
+x <- 2 / (1/60 + 1/80)
+
+cat(x, "km/h")
+```
+
 
 20. Pociąg osobowy o długości 450 m jechał z prędkością 54 km/h i miał przed sobą tunel. Od momentu wejścia czoła elektrowozu do tunelu do chwili, w której ostatni wagon opuścił tunel, upłynęło 3,5 minuty. Ile czasu pociąg jechał przez tunel? Jaka była długość tunelu?
 
+\begin{equation}
+  \left\{
+  \begin{array}{l}
+    V = 54 \\
+    V = \frac{S}{t} \\
+    V = \frac{S + 0.45}{\frac{3.5}{60}}
+  \end{array}
+  \right.
+\end{equation}
+
+\begin{equation}
+  \begin{array}{l}
+    54 = \frac{S + 0.45}{\frac{3.5}{60}} | \cdot \frac{3.5}{60} \\
+    S + 0.45 = 54 \cdot \frac{3.5}{60} \\
+    S = 54 \cdot \frac{3.5}{60} - 0.45 = 2.7 \\
+    V = \frac{S}{t} \implies t = \frac{S}{V} \\
+    t = \frac{2.7}{54} = 0.05
+  \end{array}
+\end{equation}
+
+\begin{equation}
+  \left\{
+  \begin{array}{l}
+    S = 2.7 [km] \\
+    t = 0.05 [h] = 3 [min]
+  \end{array}
+  \right.
+\end{equation}
+
 21. Z dwóch miejscowości A i B odległych o 135 km wyjeżdżają naprzeciw siebie dwaj kolarze. Jeden jedzie ze średnią prędkością 20 km/h, drugi ze średnią prędkością 25 km/h. Po jakim czasie się spotkają?
+
+\begin{equation}
+  \left\{
+  \begin{array}{l}
+    V = \frac{S}{t} \implies t = \frac{S}{V} \\
+    S = 135 \\
+    V = 20 + 25
+  \end{array}
+  \right.
+\end{equation}
+
+\begin{equation}
+  \begin{array}{l}
+    t = \frac{135}{20 + 25} = 3 [h]
+  \end{array}
+\end{equation}
 
 22. Pewną odległość jeden pociąg przebywa w ciągu 4 godzin. Drugi pociąg, którego prędkość jest o 14 km/h większa, przebywa tę samą odległość w czasie 3 godz. Jakie są prędkości pociągów?
 
-23. Pięciu robotników na wyprodukowanie jednej sztuki wyrobu potrzebowało 12 minut, trzech --- 8 minut, a dwóch -- 6 minut. Jaki jest przeciętny czas zużywany na wyprodukowanie jednej sztuki wyrobu?
+\begin{equation}
+  \left\{
+  \begin{array}{l}
+    V_{1} = \frac{S_{1}}{t_{1}} \\
+    V_{2} = \frac{S_{2}}{t_{2}} \\
+    t_{1} = 4 \\
+    t_{2} = 3 \\
+    V_{2} = V_{1} + 14 \\
+    S_{1} = S_{2}
+  \end{array}
+  \right.
+\end{equation}
+
+\begin{equation}
+  \begin{array}{l}
+    \frac{S_{2}}{t_{2}} = \frac{S_{1}}{t_{1}} + 14 \\
+    \frac{S_{1}}{3} = \frac{S_{1}}{4} + 14 \\
+    \frac{S_{1}}{3} - \frac{S_{1}}{4} = 14 \\
+    \frac{S_{1}}{12} = 14 \implies S_{1} = 14 \cdot 12 = 168 \\
+    V_{1} = \frac{168}{4} = 42 \\
+    V_{2} = 42 + 14 = 56
+  \end{array}
+\end{equation}
+
+\begin{equation}
+  \left\{
+  \begin{array}{l}
+    V_{1} = 42 \\
+    V_{2} = 56
+  \end{array}
+  \right.
+\end{equation}
+
+23. Pięciu robotników na wyprodukowanie jednej sztuki wyrobu potrzebowało 12 minut, trzech -- 8 minut, a dwóch -- 6 minut. Jaki jest przeciętny czas zużywany na wyprodukowanie jednej sztuki wyrobu?
+
+```{r}
+pracownicy <- c(5, 3, 2)
+sztuki <- c(1, 1, 1)
+czas <- c(12, 8, 6)
+
+# liczba sztuk wyprodukowanych przez wszystkich w minutę
+sztuk.razem <- sum(pracownicy*sztuki / czas) 
+
+# liczba sztuk wyprodukowanych przez jednego pracownika w minutę
+sztuk.pracownik <- sztuk.razem / sum(pracownicy)
+
+# liczba minut potrzebnych do wyprodukowania jednej sztuki przez pracownika
+x <- 1 / sztuk.pracownik
+
+cat("Przeciętny czas w minutach:", x)
+```
+
 
 24. Czwartą część drogi rowerzysta jechał z prędkością 20 km/h, połowę drogi z prędkością 24 km/h, a pozostałą część drogi z prędkością 12 km/h. Oblicz przeciętną prędkość rowerzysty.
 
