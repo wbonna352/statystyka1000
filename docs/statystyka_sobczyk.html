@@ -742,7 +742,24 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 </div>
 <ol start="24" type="1">
-<li><p>Czwartą część drogi rowerzysta jechał z prędkością 20 km/h, połowę drogi z prędkością 24 km/h, a pozostałą część drogi z prędkością 12 km/h. Oblicz przeciętną prędkość rowerzysty.</p></li>
+<li>Czwartą część drogi rowerzysta jechał z prędkością 20 km/h, połowę drogi z prędkością 24 km/h, a pozostałą część drogi z prędkością 12 km/h. Oblicz przeciętną prędkość rowerzysty.</li>
+</ol>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1"></a>V <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">20</span>, <span class="dv">24</span>, <span class="dv">12</span>)</span>
+<span id="cb12-2"><a href="#cb12-2"></a>S <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span><span class="sc">/</span><span class="dv">4</span>, <span class="dv">1</span><span class="sc">/</span><span class="dv">2</span>, <span class="dv">1</span><span class="sc">/</span><span class="dv">4</span>)</span>
+<span id="cb12-3"><a href="#cb12-3"></a>t <span class="ot">&lt;-</span> S<span class="sc">/</span>V</span>
+<span id="cb12-4"><a href="#cb12-4"></a></span>
+<span id="cb12-5"><a href="#cb12-5"></a>x <span class="ot">&lt;-</span> <span class="fu">sum</span>(S) <span class="sc">/</span> <span class="fu">sum</span>(t)</span>
+<span id="cb12-6"><a href="#cb12-6"></a></span>
+<span id="cb12-7"><a href="#cb12-7"></a><span class="fu">cat</span>(x, <span class="st">"km/h."</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>18.46154 km/h.</code></pre>
+</div>
+</div>
+<ol start="25" type="1">
 <li><p>Strukturę rodzin według liczby członków rodziny w miejscowości <em>L</em> charakteryzuje poniższy rozkład:</p>
 <table class="table">
 <tbody>

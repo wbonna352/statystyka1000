@@ -566,8 +566,18 @@ x <- 1 / sztuk.pracownik
 cat("Przeciętny czas w minutach:", x)
 ```
 
-
 24. Czwartą część drogi rowerzysta jechał z prędkością 20 km/h, połowę drogi z prędkością 24 km/h, a pozostałą część drogi z prędkością 12 km/h. Oblicz przeciętną prędkość rowerzysty.
+
+```{r}
+V <- c(20, 24, 12)
+S <- c(1/4, 1/2, 1/4)
+t <- S/V
+
+x <- sum(S) / sum(t)
+
+cat(x, "km/h.")
+```
+
 
 25. Strukturę rodzin według liczby członków rodziny w miejscowości *L* charakteryzuje poniższy rozkład:
 
